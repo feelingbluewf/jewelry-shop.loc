@@ -1,0 +1,82 @@
+body {
+    background-color: #dde7f3;
+}
+* {
+    -moz-transition: all 0.2s 0.03s ease;
+    -o-transition: all 0.2s 0.03s ease;
+    -webkit-transition: all 0.2s 0.03s ease;
+}
+.media img {
+    width: 100px;
+    height: 100px;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-shadow: 1px 1px 0px #fff;
+}
+form {
+    margin: 0;
+    padding: 0;
+}
+
+/*menu-catalogue*/
+.menu-catalogue {
+    padding-top: 15px;
+}
+.list-group-item:first-child {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.list-group-item:last-child {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    background-color: #ffffff05;
+    background: linear-gradient(135deg, rgb(255, 255, 255) 0%, rgb(184, 199, 217) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.66);
+    box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.9), 0px 0px 0px 0px rgba(0, 0, 0, 0.5), 0px 0px 0px 1px #d1b000, -1px -1px 13px rgba(0, 0, 0, 0.1), 1px 1px 15px rgba(255, 255, 255, 1), inset 2px 2px 5px -2px #b3b3b3, inset 0px 0px 16px 1px #fff;
+    text-shadow: 1px 1px 0px #fff;
+    line-height: 13px;
+}
+.list-group-item:hover {
+    background: linear-gradient(135deg, #ffffff 0%, #e7d98f 100%);
+}
+.list-group-item.active {
+    z-index: 2;
+    color: #212529;
+    font-weight: bolder;
+    background-color: #d1be5e;
+    border-color: transparent;
+    background: linear-gradient(135deg, #ffffff 0%, #e7d98f 100%);
+}
+.list-group-item.active:after {
+    content: '❯';
+    color: #212529a8;
+    font-weight: bolder;
+    right: 15px;
+    top: 10px;
+    position: absolute;
+    font-size: 10pt;
+}
+
+/*catalogue*/
+.badge-secondary {
+    /*color: #212529;*/
+    /*shadow: inset 0px 0px 3px 0px #b8a338;*/
+    /*text-transform: uppercase;*/
+    /*box-shadow: -5px -5px 15px 5px rgba(255, 255, 255, 0.9), 5px 5px 13px -4px rgba(0, 0, 0, 0.5);*/
+    /*box-shadow: -5px -5px 15px 5px rgba(255, 255, 255, 0.9), 5px 5px 13px -4px rgba(0, 0, 0, 0.5), 0px 0px 0px 3px #2e75d026;*/
+    /*background: linear-gradient(135deg, #ffffff 0%, #b9c8d9 100%);*/
+
+    /*margin: 10px;*/
+    /*padding: 5px 10px;*/
+    /*background-color: transparent;*/
+    /*border-radius: 15px;*/
+
+    color: #d3b206;
+    margin: 6px;
+    background-color: transparent;
+}
