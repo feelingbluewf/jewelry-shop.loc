@@ -1,4 +1,4 @@
-@extends('layouts.app_admin')
+@extends('shop.admin.layouts.app_admin')
 
 @section('breadcrumbs')
 <div class="content-header">
@@ -9,7 +9,7 @@
 			</div>
 			<div class="col-sm-6">
 				<ol class="breadcrumb float-sm-right">
-					<li class="breadcrumb-item"><a href="{{ route('project.admin.dashboard.index') }}"><i class="nav-icon fas fa-tachometer-alt"></i> Главная</a></li>
+					<li class="breadcrumb-item"><a href="{{ route('shop.admin.dashboard.index') }}"><i class="nav-icon fas fa-tachometer-alt"></i> Главная</a></li>
 					<li class="breadcrumb-item"><i class="fas fa-clipboard-list"></i> {{ MetaTag::get('title') }}</li>
 				</ol>
 			</div>
@@ -81,7 +81,7 @@
 							</tr>
 							@empty 
 							<tr>
-								<td colspan="8" class="text-center"><h2>Нет обрядов!</h2></td>
+								<td colspan="8" class="text-center"><h2>Нет товаров!</h2></td>
 							</tr>
 							@endforelse
 						</tbody>
