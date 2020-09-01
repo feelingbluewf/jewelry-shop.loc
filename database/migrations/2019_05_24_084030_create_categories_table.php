@@ -18,10 +18,6 @@ class CreateCategoriesTable extends Migration
 
             $table->bigIncrements('id');
             $table->string('title',255);
-            $table->string('alias',255)->unique();
-            $table->tinyInteger('parent_id')->unsigned()->default(0);
-            $table->string('keywords',255)->nullable();
-            $table->string('description',255)->nullable();
             $table->timestamps();
             $table->softDeletes();
 
